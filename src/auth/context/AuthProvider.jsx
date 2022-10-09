@@ -32,11 +32,11 @@ export const AuthProvider = ({ children }) => {
     dispatch(action);
   }
   const logout = () => {
-    const action ={
-      type: types.logout,
-      
-    }
     localStorage.removeItem('user');
+    const action = {
+      type: types.logout,
+
+    }
     dispatch(action);
   }
 
